@@ -14,7 +14,7 @@ services:
       - 993
       - 995
     volumes:
-      - mail:/var/docker/
+      - ./mail:/data
     networks:
       - default
     environment:
