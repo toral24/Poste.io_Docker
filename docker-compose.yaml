@@ -3,10 +3,13 @@ services:
   poste:
     image: analogic/poste.io
     restart: always
+    ports:
+      - 443:443
+      - 80:80
     expose:
       - 25
-      - 8181
-      - 4443
+      - 80
+      - 443
       - 110
       - 143
       - 465
